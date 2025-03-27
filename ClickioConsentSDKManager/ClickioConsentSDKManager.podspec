@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   
   spec.platform     = :ios, "15.0"
   
-  spec.source       = { :git => "https://github.com/SolveItTeam/clickio_ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:Solveit-Ekaterina-Pecherskaya/TestPod.git", :tag => "#{spec.version}" }
   
   spec.source_files = ["Sources/**/*.swift"]
   
