@@ -24,12 +24,12 @@ Pod::Spec.new do |s|
   
   s.weak_frameworks = "AppTrackingTransparency", "Combine"
   
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
-  
+  s.swift_versions = ['5.0']
   s.pod_target_xcconfig = {
-  'CODE_SIGN_IDENTITY' => '',
-  'CODE_SIGNING_REQUIRED' => 'NO',
-  'CODE_SIGNING_ALLOWED' => 'NO'
-}
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+    'CODE_SIGN_IDENTITY' => '',
+    'SWIFT_OPTIMIZATION_LEVEL' => '-Onone'
+  }
 
 end
