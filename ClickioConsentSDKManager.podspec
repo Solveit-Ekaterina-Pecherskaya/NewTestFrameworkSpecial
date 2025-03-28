@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ClickioConsentSDKManager"
   
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   
   s.summary      = "Native SDK for managing user consents, integrating a WebView-based consent dialog into iOS apps for streamlined privacy compliance."
   
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, "15.0"
   
-  s.source       = { :git => "https://github.com/Solveit-Ekaterina-Pecherskaya/TestPod.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Solveit-Ekaterina-Pecherskaya/NewTestFrameworkSpecial.git", :tag => s.version.to_s }
   
   s.frameworks = "WebKit", "UIKit", "Foundation"
   
